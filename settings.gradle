@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url 'https://repo.spring.io/plugins-release' } // Spring Boot 플러그인 리포지토리
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == 'org.springframework.boot' && requested.version == '3.1.1') {
+                useModule("org.springframework.boot:spring-boot-gradle-plugin:3.1.1")
+            }
+        }
+    }
+}
+
+rootProject.name = 'searchEngine'
+

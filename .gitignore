@@ -1,0 +1,10 @@
+
+/src/main/resources/application.yml
+
+/gradlew
+/gradlew.bat
+
+/gradle
+/.idea
+/.gradle
+/build
